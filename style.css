@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+@font-face {
+  font-family: "Digital Dream";
+  src: url(./font/digital-dream.fat.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  background-color: hsl(234, 17%, 12%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.attribution {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: white;
+}
+
+.attribution a {
+  list-style: none;
+  color: hsl(345, 95%, 68%);
+}
+
+main {
+  background: url(./images/bg-stars.svg);
+  background-color: hsl(234, 17%, 12%);
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-container {
+  position: relative;
+  text-align: center;
+}
+
+.connect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  margin: 0 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.fa:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+#bg-hills {
+  object-fit: contain;
+  width: 100vw;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.coming-soon {
+  /* width: 70vw; */
+  margin: 10vh auto auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#day,
+#hour,
+#minute,
+#second {
+  padding: 0.5rem;
+  background: linear-gradient(hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: hsl(345, 95%, 68%);
+  font-family: "Digital Dream";
+  border-bottom: 5px solid black;
+  border-radius: 15px;
+}
+
+.time-label {
+  color: hsl(237, 18%, 59%);
+}
+
+.time-container {
+}
+
+@media only screen and (max-width: 600px) {
+  .coming-soon h1 {
+    font-size: 2rem;
+    margin: 2rem 0.5rem;
+  }
+
+  #day,
+  #hour,
+  #minute,
+  #second {
+    font-size: 1.5rem;
+  }
+}
